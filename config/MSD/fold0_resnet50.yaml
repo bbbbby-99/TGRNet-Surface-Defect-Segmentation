@@ -1,0 +1,49 @@
+DATA:
+  data_root: '../MSD-Seg2/'
+  train_list: './data_list/train/fold_0_defective.txt'
+  trainnom_list: './data_list/train/fold_0_clean.txt'
+  val_list: './data_list/test/fold_0_defective.txt'
+  valnom_list: './data_list/test/fold_0_clean.txt'
+  classes: 2
+
+
+TRAIN:
+  layers: 50
+  sync_bn: False
+  train_h: 200
+  train_w: 200
+  val_size: 200
+  scale_min: 0.9  # minimum random scale
+  scale_max: 1.1 # maximum random scale
+  rotate_min: -10  # minimum random rotate
+  rotate_max: 10  # maximum random rotate
+  ignore_label: 255
+  padding_label: 255
+  aux_weight: 1.0
+  train_gpu: [0]
+  workers: 2  # data loader workers
+  batch_size: 2 # batch size for training
+  batch_size_val: 1
+  base_lr: 0.0005
+  epochs: 200
+  start_epoch: 0
+  power: 0.9 # 0 means no decay
+  momentum: 0.9
+  weight_decay: 0.0001
+  manual_seed: 1334
+  print_freq: 5
+  save_freq: 5
+  save_path: exp/MSD/fold0_resnet50/model  # model saved path
+  weight:  # load weight for fine-tuning or testing
+  resume:  # path to latest checkpoint (default: none)
+  evaluate: True
+  split: 0
+  shot: 1
+  vgg: False # use vgg as backbone or not
+  ppm_scales: [66, 33, 16, 8]
+  fix_random_seed_val: True
+  warmup: False
+  resized_val: True
+  ori_resize: True  # use original label for evaluation
+  normal: 1
+  FPN : False
