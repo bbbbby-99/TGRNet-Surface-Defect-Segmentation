@@ -248,7 +248,7 @@ class FSSNet(nn.Module):
         out_2 = self.cls_f(feat_2, w, h)
 
         out =out_1-out_2
-        out1=torch.cat((corr_a2,corr_a1),1)
+        out1=torch.cat((corr_a1,corr_a2),1)
         out =out + (self.trip * out1)
         out_mask2 = out.max(1)[1]
         out_mask2=out_mask2.unsqueeze(1)
