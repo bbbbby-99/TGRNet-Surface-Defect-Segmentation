@@ -15,11 +15,19 @@ Citing this paper:
 If you use our code or data in your research, please use the following BibTeX entry.
 
 @article{bao2021triplet,
+
   title={Triplet-graph reasoning network for few-shot metal generic surface defect segmentation},
+  
   author={Bao, Yanqi and Song, Kechen and Liu, Jie and Wang, Yanyan and Yan, Yunhui and Yu, Han and Li, Xingjie},
+  
   journal={IEEE Transactions on Instrumentation and Measurement},
+  
   volume={70},
+  
   pages={1--11},
+  
   year={2021},
+  
   publisher={IEEE}
+  
 }
