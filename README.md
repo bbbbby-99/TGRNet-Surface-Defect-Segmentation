@@ -1,16 +1,16 @@
 # Code and datasets of Triplet--Graph-Reasoning-Network-for-Few-shot-Metal-Generic-Surface-Defect-Segmentation
 
-Dataset:
+## Dataset:
 
 You can contact ours by email to get the dataset-decompression-password（yanqibao1997@gmail.com）
 
-Training：
+## Training：
 
 You can directly use our dataset for training.
 
 you can use your dataset for training, this process requires regenerating the "data_list" file.
 
-Citing this paper:
+## Citing this paper:
 
 If you use our code or data in your research, please use the following BibTeX entry.
 
@@ -31,3 +31,4 @@ If you use our code or data in your research, please use the following BibTeX en
   publisher={IEEE}
   
 }
+
