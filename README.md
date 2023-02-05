@@ -4,7 +4,7 @@
 
 You can contact ours by email to get the dataset-decompression-password（yanqibao1997@gmail.com）
 
-##Config：
+## Config：
 
   Before training you need to modify the *.YAML file path in the config folder, such as:
   ```js
