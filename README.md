@@ -2,7 +2,7 @@
 
 ## Dataset:
 
-You can contact ours by email to get the dataset-decompression-password（yanqibao1997@gmail.com）
+~~You can contact ours by email to get the dataset-decompression-password（yanqibao1997@gmail.com）~~ The decompression password is neu123.
 
 ## Config：
 
